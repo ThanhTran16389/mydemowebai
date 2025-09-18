@@ -1,0 +1,12 @@
+h1{
+    color:red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-overflow: ellipsis;
+    text-wrap: wrap;
+    text-overflow: ellipsis;
+}
