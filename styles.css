@@ -1,3 +1,104 @@
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #2d5a27; /* Eco green background */
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.nav-logo {
+    flex: 1;
+}
+
+.company-name {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+    background-color: #4a7c59; /* Lighter eco green on hover */
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.nav-link:active {
+    background-color: #1e3d1a; /* Darker green when clicked */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    .company-name {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .nav-menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+    
+    .company-name {
+        font-size: 14px;
+    }
+}
+
+/* Existing h1 styles */
 h1{
     color:red;
     font-size: 20px;
@@ -9,4 +110,5 @@ h1{
     text-overflow: ellipsis;
     text-wrap: wrap;
     text-overflow: ellipsis;
+    margin-top: 40px; /* Add space below navigation */
 }
