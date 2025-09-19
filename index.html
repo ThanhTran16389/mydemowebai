@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTY TNHH TM & DV ARCH-AI</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -14,9 +15,9 @@
             </div>
             <div class="nav-menu">
                 <a href="#" class="nav-link">HOME</a>
-                <a href="#" class="nav-link">ABOUT</a>
-                <a href="#" class="nav-link">SERVICE</a>
-                <a href="#" class="nav-link">CONTACT</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#services" class="nav-link">SERVICE</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
             </div>
         </div>
     </nav>
@@ -30,6 +31,98 @@
         </div>
     </div>
 </section>
+<section id="about" class="about-section">
+    <div class="about-container">
+        <h2 class="about-heading">Về chúng tôi</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis ultricies, turpis in ullamcorper venenatis, urna quam viverra nisi, in interdum massa nibh nec erat.
+                </p>
+            </div>
+            <div class="about-image">
+                <div class="about-image-placeholder"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services" class="services-section">
+    <div class="services-container">
+        <h2 class="services-heading">Dịch vụ của chúng tôi</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <div class="service-title">Dịch vụ nhanh</div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✓</div>
+                <div class="service-title">Chất lượng cao</div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💰</div>
+                <div class="service-title">Giá cả hợp lý</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2 class="contact-heading">Liên hệ với chúng tôi</h2>
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Họ tên *</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Tin nhắn</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="contact-submit-btn">Gửi tin nhắn</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 class="footer-title">CTY TNHH TM & DV ARCH-AI</h3>
+                <p class="footer-description">
+                    Chuyên tư vấn thiết kế và cung cấp dịch vụ thi công trọn gói với chất lượng cao và giá cả hợp lý.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about" class="footer-link">Về chúng tôi</a></li>
+                    <li><a href="#services" class="footer-link">Dịch vụ</a></li>
+                    <li><a href="#contact" class="footer-link">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Liên hệ</h3>
+                <div class="footer-contact">
+                    <p class="footer-contact-item">📧 info@arch-ai.com</p>
+                    <p class="footer-contact-item">📞 (028) 1234-5678</p>
+                    <p class="footer-contact-item">📍 123 Đường ABC, Quận 1, TP.HCM</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2025 CTY TNHH TM & DV ARCH-AI. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
     
 </body>
 </html>
